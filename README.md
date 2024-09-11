@@ -71,3 +71,7 @@ Este projeto tem como objetivo monitorar e prever condições climáticas utiliz
 4. **Armazenamento em MongoDB:** Os dados formatados são enviados para o MongoDB, onde são armazenados para uso futuro.
 5. **Treinamento de Modelo:** Com os dados armazenados, o modelo de Machine Learning é treinado para prever a possibilidade de chuva.
 6. **Previsões:** O modelo realiza previsões baseadas nos dados climáticos, e os resultados são apresentados para o usuário.
+
+### Diagrama de Fluxo
+
+![DiagramaFuncionamento](https://github.com/user-attachments/assets/87dcc0b6-c4e1-4f8a-bf2a-00b4dd171dac)
