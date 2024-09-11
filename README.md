@@ -74,4 +74,5 @@ Este projeto tem como objetivo monitorar e prever condições climáticas utiliz
 
 ### Diagrama de Fluxo
 
-![DiagramaFuncionamento](https://github.com/user-attachments/assets/87dcc0b6-c4e1-4f8a-bf2a-00b4dd171dac)
+![DiagramaFuncionamento](https://github.com/user-attachments/assets/4b7f3706-c5ce-4da1-b671-c505a3a47444)
+
