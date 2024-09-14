@@ -21,7 +21,7 @@ Este projeto tem como objetivo monitorar e prever condições climáticas utiliz
    - Os dados formatados devem ser armazenados em uma base de dados.
 
 5. **Treinamento de Modelo de Machine Learning (RF05):**
-   - O sistema deve utilizar treinar uma inteligência artificial com os dados coletados.]
+   - O sistema deve utilizar treinar uma inteligência artificial com os dados coletados.
 
 6. **Previsão de resultados (RF06)**
    - O modelo deve ser capaz de prever a probabilidade de chuva com base nas variáveis climáticas.
