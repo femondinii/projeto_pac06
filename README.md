@@ -77,7 +77,7 @@ Este projeto tem como objetivo monitorar e prever condições climáticas utiliz
 2. **Microcontrolador -> Computador:** O Arduino transmite os dados brutos para um computador via cabo Arduino.
 3. **Formatação dos Dados:** Um script Python no computador processa os dados, formatando-os em um padrão adequado.
 4. **Armazenamento em MongoDB:** Os dados formatados são enviados para o MongoDB, onde são armazenados para uso futuro.
-5. **Treinamento de Modelo:** Com os dados armazenados, o modelo de Machine Learning é treinado para prever a possibilidade de chuva.
+5. **Treinamento de Modelo:** Com os dados armazenados, será utilizada a biblioteca Scikit-learn dentro do Python, com algoritmo de regressão múltipla ou redes bayesianas para fazer o treinamento e predição da possibilidade de chuva, com possibilidade otimização do resultado utilizando algoritmos genéticos.
 6. **Previsões:** O modelo realiza previsões baseadas nos dados climáticos, e os resultados são apresentados para o usuário.
 
 ### Diagrama de Fluxo
