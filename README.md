@@ -84,3 +84,8 @@ Este projeto tem como objetivo monitorar e prever condições climáticas utiliz
 
 ![DiagramaFuncionamento](https://github.com/user-attachments/assets/4b7f3706-c5ce-4da1-b671-c505a3a47444)
 
+### Projeto Tinkercad
+
+![image](https://github.com/user-attachments/assets/13e91e94-5fc9-459a-a013-fd5a83333a7b)
+
+
