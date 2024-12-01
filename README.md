@@ -49,21 +49,20 @@ Este projeto tem como objetivo monitorar e prever condições climáticas utiliz
 6. **Tecnologia para Coleta de Dados (RNF06)**
    - Devem ser utilizados para a coleta de dados, os seguintes sensores:
      - Sensor DS18B20 para medir a temperatura.
-     - Sensor HR202L para medir a umidade relativa do ar.
+     - Sensor DHT11 para medir a umidade relativa do ar.
      - Sensor BMP180 para medir a pressão atmosférica.
 
 7. **Tecnologia para transmissão dos dados (RNF07)**
-   - Deve ser utilizado um Microcontrolador Arduino para fazer a transmissão dos dados coletados pelos sensores, para um computador.
+   - Deve ser utilizado um Microcontrolador ESP32 para fazer a transmissão dos dados coletados pelos sensores, para um computador.
      
 ## Arquitetura do Projeto
 
 ### Componentes de Hardware
 
-- **Arduino (Microcontrolador):** Responsável por coletar os dados dos sensores e enviá-los ao computador.
+- **ESP32 (Microcontrolador):** Responsável por coletar os dados dos sensores e enviá-los ao computador utilizando conexão Wi-Fi.
 - **Sensor DS18B20 (Termômetro):** Mede a temperatura.
-- **Sensor HR202L (Higrômetro):** Mede a umidade relativa do ar.
+- **Sensor DHT11 (Higrômetro):** Mede a umidade relativa do ar.
 - **Sensor BMP180 (Barômetro):** Mede a pressão atmosférica.
-- **Cabo de Rede:** Conecta o microcontrolador ao computador para transmitir os dados.
 
 ### Componentes de Software
 
@@ -73,8 +72,8 @@ Este projeto tem como objetivo monitorar e prever condições climáticas utiliz
 
 ### Fluxo de Dados
 
-1. **Sensores -> Microcontrolador:** Os dados de temperatura (Sensor DS18B20), umidade relativa do ar (Sensor HR202L) e pressão atmosférica (Sensor BMP180) são capturados e enviados para o microcontrolador/gateway (Arduino).
-2. **Microcontrolador -> Computador:** O Arduino transmite os dados brutos para um computador via cabo Arduino.
+1. **Sensores -> Microcontrolador:** Os dados de temperatura (Sensor DS18B20), umidade relativa do ar (Sensor DHT11) e pressão atmosférica (Sensor BMP180) são capturados e enviados para o microcontrolador/gateway (ESP32).
+2. **Microcontrolador -> Computador:** O ESP32 transmite os dados brutos para um computador via conexão Wi-Fi.
 3. **Formatação dos Dados:** Um script Python no computador processa os dados, formatando-os em um padrão adequado.
 4. **Armazenamento em MongoDB:** Os dados formatados são enviados para o MongoDB, onde são armazenados para uso futuro.
 5. **Treinamento de Modelo:** Com os dados armazenados, será utilizada a biblioteca Scikit-learn dentro do Python, com algoritmo de regressão múltipla ou redes bayesianas para fazer o treinamento e predição da possibilidade de chuva, com possibilidade otimização do resultado utilizando algoritmos genéticos.
@@ -82,7 +81,7 @@ Este projeto tem como objetivo monitorar e prever condições climáticas utiliz
 
 ### Diagrama de Fluxo
 
-![DiagramaFuncionamento](https://github.com/user-attachments/assets/4b7f3706-c5ce-4da1-b671-c505a3a47444)
+![image](https://github.com/user-attachments/assets/41986925-f5cc-417f-9992-9c74b35eed38)
 
 ### Projeto Tinkercad
 
